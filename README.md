@@ -6,3 +6,14 @@
 
 暗色推荐使用 **Hydra** 的主题。
 <img src="https://www.adminer.org/static/designs/hydra/screenshot.png">
+
+## Change Log
+- 12-17/20
+  <p>
+  - 更新
+  </p>
+
+- old
+  <p>
+  - 添加
+  </p>

@@ -1,0 +1,9 @@
+version: "3.3"
+
+services: 
+  adminer:
+    container_name: "MyAdminer"
+    build: .
+    restart: "no"
+    ports: 
+      - 8001:80
