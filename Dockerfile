@@ -7,7 +7,7 @@ COPY ./sources.list   .
 
 WORKDIR /var/www/html
 COPY ./adminer-4.7.8-mysql.php ./index.php
-COPY ./pepa-linha.css ./adminer.css
+COPY ./hydra.css ./adminer.css
 
 RUN docker-php-ext-install mysqli && \
     docker-php-ext-enable mysqli
