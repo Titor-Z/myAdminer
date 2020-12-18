@@ -22,7 +22,7 @@ version: "3.3"
 services: 
   adminer:
     container_name: "Adminer"
-    image: foolsecret/alpine
+    image: foolsecret/adminer
     restart: "always"
     # 必须指定端口绑定
     ports: 
@@ -33,6 +33,8 @@ services:
 ## 镜像版本说明
 ### latest
 最新版本，也是默认版本。
+### dark
+暗色主题最新版本，适合夜间使用。
 
 <br><br>
 ## 主题示例
