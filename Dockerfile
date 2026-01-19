@@ -1,13 +1,11 @@
-FROM php:7.4.13-apache
+FROM php:8.3-apache
 
-LABEL Author="Titor-Z<foolsecret@163.com>"
+LABEL Author="Z.to<foolsecret@163.com>"
 
-WORKDIR /etc/apt/
-COPY ./sources.list   .
+COPY ./sources.list /etc/apt/
+COPY ./adminer-5.4.1.php /var/www/html/index.php
+COPY ./filamentish.dark.css /var/www/html/adminer.css
 
-WORKDIR /var/www/html
-COPY ./adminer-4.7.8-mysql.php ./index.php
-COPY ./pepa-linha.css ./adminer.css
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
 
-RUN docker-php-ext-install mysqli && \
-    docker-php-ext-enable mysqli
+EXPOSE 80
